@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+        Compass: Error
+</title><meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <!--suppress CssReplaceWithShorthandSafely -->
+        <style type="text/css">
+                body {
+                        background: #F6FAFE;
+                }
+
+                #wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        flex: 1;
+                        text-align: center;
+                        padding: 2rem;
+                }
+
+                h2 {
+                        font-size: 32px;
+                        font-family: Cabin, sans-serif;
+                        font-weight: 700;
+                        line-height: 136%;
+                        color: #203249;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                }
+
+                h5 {
+                        font-size: 16px;
+                        font-family: Cabin, sans-serif;
+                        font-weight: 400;
+                        line-height: 150%;
+                        background: transparent !important;
+                        border: none !important;
+                        color: #203249;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                }
+
+                p {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                }
+
+                pre {
+                        max-width: 100%;
+                        overflow-x: auto;
+                        white-space: pre-wrap;
+                        overflow-wrap: anywhere;
+                        text-align: left;
+                }
+
+                a:link,
+                a:hover,
+                a.active,
+                a:visited {
+                        color: #006DCC;
+                        text-decoration: none;
+                }
+
+                /* Extra small devices (phones, 600px and down) */
+                @media only screen and (max-width: 600px) {
+                        #logoSvg {
+                                background: url(/Assets/Pix/svg/Compass-Logo.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                height: 34px;
+                                width: 109px;
+                                padding: unset;
+                        }
+                        #decorationSvg {
+                                background: url(/Assets/Pix/svg/Lady-With-Glass.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                height: 118px;
+                                width: 135px;
+                                padding: 0px 0px 0px;
+                        }
+                }
+
+                /* Small devices (portrait tablets and large phones, 600px and up) */
+                @media only screen and (min-width: 600px) {
+                        #logoSvg {
+                                background: url(/Assets/Pix/svg/Compass-Logo.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                height: 34px;
+                                width: 155px;
+                                padding: unset;
+                        }
+
+                        #decorationSvg {
+                                background: url(/Assets/Pix/svg/Lady-With-Glass.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+
+                                height: 196px;
+                                width: 225px;
+                                padding: 0px 0px 0px;
+                        }
+                }
+
+                /* Medium devices (landscape tablets, 900 and up) */
+                @media only screen and (min-width: 900px) {
+                        #logoSvg {
+                                background: url(/Assets/Pix/svg/Compass-Logo.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+
+                                height: 34px;
+                                width: 155px;
+                                padding: unset;
+                        }
+
+                        #decorationSvg {
+                                background: url(/Assets/Pix/svg/Lady-With-Glass.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+
+                                height: 393px;
+                                width: 450px;
+                                padding: 0px 0px 0px;
+                        }
+                }
+
+                /* Large devices (laptops/desktops, 1200 and up) */
+                @media only screen and (min-width: 1200px) {
+                        #logoSvg {
+                                background: url(/Assets/Pix/svg/Compass-Logo.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+
+                                height: 34px;
+                                width: 155px;
+                                padding: unset;
+                        }
+
+                        #decorationSvg {
+                                background: url(/Assets/Pix/svg/Lady-With-Glass.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+
+                                height: 393px;
+                                width: 450px;
+                                padding: 0px 0px 0px;
+                        }
+                }
+
+                /* Extra large devices (large laptops and desktops, 1536 and up) */
+                @media only screen and (min-width: 1536px) {
+                        #logoSvg {
+                                background: url(/Assets/Pix/svg/Compass-Logo.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+
+                                height: 34px;
+                                width: 155px;
+                                padding: unset;
+                        }
+
+                        #decorationSvg {
+                                background: url(/Assets/Pix/svg/Lady-With-Glass.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+
+                                height: 393px;
+                                width: 450px;
+                                padding: 0px 0px 0px;
+                        }
+                }
+
+                .hide {
+                        display: none;
+                }
+
+                .hide-text {
+                        color: #F6FAFE;
+                }
+
+        </style>
+
+        <script type="text/javascript">
+                function showDetails() {
+                        var el = document.getElementById("details");
+                        if (el) el.className = "";
+
+                        var compassDeets = document.getElementById("compassEnv");
+                        if (compassDeets) compassDeets.className = "";
+                }
+
+                window.onload = function loadSupportEmail() {
+                        var supportEmailLink = document.getElementById('supportEmail');
+                        if (!supportEmailLink) return;
+
+                        var browserTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+                        var supportUrl;
+                        switch (browserTz){
+                                case 'Europe/Dublin':
+                                case 'Europe/London':
+                                        supportUrl = 'help@compass.education';
+                                        break;
+                                default:
+                                        supportUrl = 'support@compass.education';
+                        }
+
+                        supportEmailLink.innerText = supportUrl;
+                        supportEmailLink.href = 'mailto:' + supportUrl;
+                }
+        </script>
+
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&amp;display=swap" rel="stylesheet" /></head>
+<body>
+<div id="wrapper">
+        <div id="logoSvg" class="svg"></div>
+        <div id="decorationSvg" class="svg"></div>
+        <h2>404 File Not Found</h2>
+        <h5>The file or page you were looking for could not be found at this address. <br />Please <a href="/">click here</a> to return to the Compass Home Page.</h5>
+        <h5></h5>
+        <pre></pre>
+        <h5 id='compassEnv' class='hide-text'>Compass (12.9.40.6 / WA1PD01#15)</h5>
+</div>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5935a978ce2863b',t:'MTc5NDQ2MzYxOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5935a978ce2863b',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
